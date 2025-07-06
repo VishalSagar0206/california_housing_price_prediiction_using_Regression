@@ -1,73 +1,186 @@
-# California Housing Price Prediction
-
-An end-to-end machine learning pipeline to predict California housing prices using regression. This project is inspired by the Hands-On Machine Learning book and follows best practices for modular, production-ready ML code.
-
-## Project Highlights
-
-- Data ingestion from remote `.tgz` source
-- Data preprocessing with Scikit-learn pipelines
-- Train-test split, imputation, scaling, and encoding
-- Model training using Linear Regression
-- Model evaluation using RMSE and R² score
-- Artifacts saved using `joblib` (model and pipeline)
-- Modular codebase for easy extension and deployment
-
-## Badges
-
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2%2B-orange)](https://scikit-learn.org/)
-[![License](https://img.shields.io/github/license/VishalSagar0206/california_housing_price_prediiction_using_Regression)](./LICENSE)
-
-## Project Structure
-
-housing_price_using_regression/
-├── artifacts/ # Saved model and pipeline
-├── data/ # Raw and extracted data
-├── notebooks/ # Jupyter notebooks
-├── src/ # Source code modules
-│ ├── data_ingestion.py
-│ ├── data_preprocessing.py
-│ ├── model_training.py
-│ └── model_evaluation.py
-├── run_pipeline.py # Main entrypoint to execute pipeline
-├── requirements.txt
-└── README.md
-
-## How to Run This Project
-
-1. **Clone the repository**
-   ```bash
-   git clone git@github.com:VishalSagar0206/california_housing_price_prediiction_using_Regression.git
-   cd california_housing_price_prediiction_using_Regression
-
-python3 -m venv venv
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-python run_pipeline.py
-
-Trained model: artifacts/model.pkl
-
-Preprocessing pipeline: artifacts/pipeline.pkl
-
-| Metric | Value (sample run) |
-| ------ | ------------------ |
-| RMSE   | \~69000            |
-| R²     | \~0.64             |
-
+Perfect, Vishal — let’s now **push your Docker setup to GitHub** and **polish your `README.md`** to make it **portfolio-worthy** and recruiter-ready.
 
 ---
 
-## STEP 2: Add LICENSE File (MIT)
+## ✅ STEP 1: Push Dockerfile and `.dockerignore` to GitHub
 
-Run:
+### ✅ Add the files:
 
 ```bash
-touch LICENSE
-nano LICENSE
+git add Dockerfile .dockerignore
+```
 
+### ✅ Commit:
 
-## Live Demo
+```bash
+git commit -m "Add Dockerfile for containerized Streamlit deployment"
+```
 
-Try the app here:[California Housing Price Predictor](https://californiahousingpriceprediictionusingregression-jrh34d4nhpbss.streamlit.app)
+### ✅ Push:
+
+```bash
+git push
+```
+
+If you're on `main`, you’re done. Otherwise use:
+
+```bash
+git push origin <your-branch-name>
+```
+
+---
+
+## ✅ STEP 2: Polish Your `README.md` (copy-paste below)
+
+Now open `README.md` and replace it with the following:
+
+---
+
+### ✅ `README.md` (Professional Template)
+
+````markdown
+# 🏡 California Housing Price Prediction using Regression
+
+This is an end-to-end machine learning project that predicts California housing prices using linear regression techniques. The project includes preprocessing pipelines, model training, evaluation, and an interactive Streamlit web app.
+
+---
+
+## 🚀 Features
+
+- ✅ Data preprocessing (numerical & categorical pipelines)
+- ✅ End-to-end ML workflow with `train-test split`, `pipeline`, `joblib`
+- ✅ Interactive UI using **Streamlit**
+- ✅ Deployable via **Docker**
+- ✅ Unit tests with `pytest`
+- ✅ Version-controlled and modular codebase
+
+---
+
+## 📊 Tech Stack
+
+| Component        | Tech Used                        |
+|------------------|----------------------------------|
+| Language         | Python 3.12                      |
+| Data Processing  | Pandas, NumPy                    |
+| ML Models        | scikit-learn (LinearRegression)  |
+| App Interface    | Streamlit                        |
+| Deployment       | Docker                           |
+| Testing          | Pytest                           |
+| Version Control  | Git + GitHub                     |
+
+---
+
+## 🧪 Run Locally
+
+### 🔧 1. Clone the Repository
+
+```bash
+git clone https://github.com/VishalSagar0206/california_housing_price_prediiction_using_Regression.git
+cd california_housing_price_prediiction_using_Regression
+````
+
+### ⚙️ 2. Create & Activate Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 📦 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### ▶️ 4. Run the App
+
+```bash
+streamlit run streamlit_app.py
+```
+
+---
+
+## 🐳 Run with Docker
+
+### 🔨 Build Image
+
+```bash
+docker build -t housing-app .
+```
+
+### 🚀 Run Container
+
+```bash
+docker run -p 8501:8501 housing-app
+```
+
+Then visit: [http://localhost:8501](http://localhost:8501)
+
+---
+
+## 🧠 Sample Prediction
+
+Enter inputs like:
+
+* **Median Income**: 3.2
+* **House Age**: 25
+* **Rooms**: 6
+* **Bedrooms**: 2
+* **Population**: 1200
+
+It returns the **predicted house price** in California!
+
+---
+
+## 🧪 Run Tests
+
+```bash
+pytest tests/
+```
+
+---
+
+## 📌 Project Structure
+
+```
+├── artifacts/
+│   ├── model.pkl
+│   └── pipeline.pkl
+├── src/
+│   ├── data_loader.py
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   └── model_evaluation.py
+├── tests/
+│   └── test_pipeline_test.py
+├── streamlit_app.py
+├── run_pipline.py
+├── Dockerfile
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🌐 Live App
+
+👉 [California Housing Predictor - Streamlit Cloud](https://californiahousingpriceprediictionusingregression-jrh34d4nhpbss.streamlit.app/)
+
+---
+
+## 📈 Author
+
+**Vishal K**
+*Data Scientist | GCP & ML Enthusiast*
+
+---
+
+## 📎 License
+
+This project is licensed under the MIT License.
+
+````
+
+---
+
+---
