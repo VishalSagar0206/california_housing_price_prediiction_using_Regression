@@ -20,3 +20,54 @@ An end-to-end machine learning pipeline to predict California housing prices usi
 
 ## Project Structure
 
+housing_price_using_regression/
+├── artifacts/ # Saved model and pipeline
+├── data/ # Raw and extracted data
+├── notebooks/ # Jupyter notebooks
+├── src/ # Source code modules
+│ ├── data_ingestion.py
+│ ├── data_preprocessing.py
+│ ├── model_training.py
+│ └── model_evaluation.py
+├── run_pipeline.py # Main entrypoint to execute pipeline
+├── requirements.txt
+└── README.md
+
+## How to Run This Project
+
+1. **Clone the repository**
+   ```bash
+   git clone git@github.com:VishalSagar0206/california_housing_price_prediiction_using_Regression.git
+   cd california_housing_price_prediiction_using_Regression
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python run_pipeline.py
+
+Trained model: artifacts/model.pkl
+
+Preprocessing pipeline: artifacts/pipeline.pkl
+
+| Metric | Value (sample run) |
+| ------ | ------------------ |
+| RMSE   | \~69000            |
+| R²     | \~0.64             |
+
+
+---
+
+## STEP 2: Add LICENSE File (MIT)
+
+Run:
+
+```bash
+touch LICENSE
+nano LICENSE
+
+
+## Live Demo
+
+Try the app here:[California Housing Price Predictor](https://californiahousingpriceprediictionusingregression-jrh34d4nhpbss.streamlit.app)
