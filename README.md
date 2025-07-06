@@ -1,32 +1,22 @@
-# 🏠 Housing Price Prediction - End-to-End ML Project
+# California Housing Price Prediction
 
-This is a complete end-to-end regression project to predict **California housing prices**, inspired by the Hands-On ML book by Aurélien Géron.
+An end-to-end machine learning pipeline to predict California housing prices using regression. This project is inspired by the Hands-On Machine Learning book and follows best practices for modular, production-ready ML code.
 
-## 🔧 Tech Stack
-- Python 3.12+
-- Pandas, NumPy
-- Scikit-Learn
-- Joblib
+## Project Highlights
 
-## 📁 Project Structure
-housing_price_using_regression/
-├── data/ # Downloaded data files
-├── notebooks/ # Jupyter notebooks
-├── src/ # Python source code
-│ ├── data_ingestion.py
-│ ├── data_preprocessing.py
-│ ├── model_training.py
-│ └── model_evaluation.py
-├── artifacts/ # Saved models and pipeline
-├── run_pipeline.py # Runs the full pipeline
-├── requirements.txt
-└── README.md
+- Data ingestion from remote `.tgz` source
+- Data preprocessing with Scikit-learn pipelines
+- Train-test split, imputation, scaling, and encoding
+- Model training using Linear Regression
+- Model evaluation using RMSE and R² score
+- Artifacts saved using `joblib` (model and pipeline)
+- Modular codebase for easy extension and deployment
 
+## Badges
 
-## How to Run
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2%2B-orange)](https://scikit-learn.org/)
+[![License](https://img.shields.io/github/license/VishalSagar0206/california_housing_price_prediiction_using_Regression)](./LICENSE)
 
-1. **Install requirements**:
-   ```bash
-   pip install -r requirements.txt
+## Project Structure
 
-python run_pipeline.py
